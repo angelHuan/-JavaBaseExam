@@ -65,7 +65,7 @@ public class App{
 			map.put(i, value);
 		}
 		
-		System.out.println(map);
+		System.out.println("Map中的数据为 : "+map);
 		
 		//Map<Integer, String> map3
 		for(int i : set){
@@ -96,7 +96,7 @@ public class App{
 			/*https://github.com/angelHuan/JavaBaseExam*/
 		}
 		
-		System.out.println(map3);
+		System.out.println("排序后的Map为: "+map3);
 		
 	}
 	
