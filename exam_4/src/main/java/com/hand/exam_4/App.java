@@ -31,7 +31,7 @@ public class App{
 		//List<Map<Integer, List<Integer>>> mapList = new ArrayList<Map<Integer, List<Integer>>>();)
 		//Map<String,String>map = new HashMap<String,String>();
 		
-		//Map<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
+		Map<Integer, List<Integer>> map3 = new HashMap<Integer, List<Integer>>();
 		
 		//List<Map<Integer,Integer>> list2 = new ArrayList<Map<Integer, Integer>>();
 		
@@ -76,10 +76,12 @@ public class App{
 				array[j] = Integer.parseInt(split[j]);
 			}
 			
-			
+			List<Integer> list2 = new ArrayList<Integer>();
 			int[] arr = bubbleSort(array);
-			
-			String res = null;
+			for(int z = 0; z < arr.length; z++){
+				list2.add(arr[z]);
+			}
+			/*String res = null;
 			for(int j = 0; j < arr.length; i++){
 				if(j!= arr.length-1){
 					res = res + arr[j]+",";
@@ -88,14 +90,13 @@ public class App{
 				}
 				System.out.println(arr[j]);
 				
-			}
+			}*/
 			
-			
-			String temp = ">["+res+"]";
-			map.put(i, temp);
+			map3.put(i, list2);
+			/*https://github.com/angelHuan/JavaBaseExam*/
 		}
 		
-		//System.out.println(map);
+		System.out.println(map3);
 		
 	}
 	
